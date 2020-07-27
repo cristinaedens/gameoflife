@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+html {
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #353037;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-family: "Raleway", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-display {
+    width: 1000px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    color: grey;
+    border: 10px;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+button {
+    background: linear-gradient(180deg, #fea 0%, #dc8 34.71685431019997%, #a95 52.641012714949866%, #dc8 100%);
+    border-radius: 5px;
+    border: 1px solid #ba6;
+    border-width: 1px 1px 1px 1px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 1), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: Helvetica Neue;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(173, 156, 88, 1) 0%, rgba(217, 200, 132, 1) 38%, rgba(250, 233, 165, 1) 53%, rgba(217, 200, 132, 1) 71%, rgba(173, 156, 88, 1) 100%);
+    text-decoration: none;
+}
+
+.description-container {
+    color: #b7deed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.description {
+    margin-right: 2%;
+}
+
+h1 {
+    color: #DEB2A9;
 }

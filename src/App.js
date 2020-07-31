@@ -122,7 +122,7 @@ return (
       }}
     >
       {/* This creates the grid by mapping over rows. 
-    I is the index of rows, c is the index of columns  */}
+        i is the index of rows, c is the index of columns  */}
       {grid.map((rows, i) =>
         rows.map((col, c) => (
           <div
@@ -159,6 +159,8 @@ return (
           {running ? <i class="pause" /> : <i class="play" />}
           ►/{'\u2016'}
         </button>
+
+        {/*slow down the game*/}
         <button
           onClick={() => {
             if (speed <= 5000) {
@@ -170,6 +172,7 @@ return (
           -
         </button>
 
+          {/*speed up the game*/}
         <button
           onClick={() => {
             if (speed >= 100) {
@@ -180,6 +183,8 @@ return (
           <i class="speed-up" />
           +
         </button>
+
+        {/*Clear the grid*/}
         <button
           onClick={() => {
             setGrid(emptyGrid());
@@ -189,6 +194,7 @@ return (
           Clear
         </button>
 
+        {}
         <button
           onClick={() => {
             const rows = [];
